@@ -1,0 +1,15 @@
+baseurl = "http://douglasbouttell.co.uk/"
+languageCode = "en-gb"
+title = "douglas bouttell"
+author = "Douglas Bouttell"
+copyright = "Douglas Bouttell All rights reserved."
+
+theme = "hyde"
+[params]
+#layoutReverse = true
+description = " "
+#copyright = "Douglas Bouttell All rights reserved."
+#themeColor = "theme-base-09"
+
+[permalinks]
+posts = "/:year/:month/:title/"
