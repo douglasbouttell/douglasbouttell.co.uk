@@ -6,10 +6,19 @@ copyright = "Douglas Bouttell All rights reserved."
 
 theme = "hyde"
 [params]
-#layoutReverse = true
+layoutReverse = true
 description = " "
+author = "Douglas Bouttell"
 #copyright = "Douglas Bouttell All rights reserved."
 #themeColor = "theme-base-09"
+
+[[params.links]]
+Name = "LinkedIn"
+URL = "https://uk.linkedin.com/in/douglasbouttell"
+
+[[params.links]]
+Name = "Twitter"
+URL = "https://twitter.com/douglasbouttell"
 
 [permalinks]
 posts = "/:year/:month/:title/"

@@ -2,36 +2,29 @@
 <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
 
     {{ partial "sidebar.html" . }}
+
     <div class="content container">
-    <div class="posts">
 
-    {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 10 }}
-    {{ range $paginator.Pages }}
-    <div class="post">
-          <h1 class="post-title">
-              <a href="{{ .Permalink }}">
-                  {{ .Title }}
-              </a>
-          </h1>
-          <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-          {{ .Summary }}
+    <h1>About</h1>
+    {{ partial "about.html" . }}
 
-        <div class="read-more-link">
-            <a href="{{ .RelPermalink }}">Read More...</a>
+    <section class="posts">
+        <h1>Last 10 Posts</h1>
+        {{ $posts := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+        {{ range first 10 $posts }}
+        <div>
+            <span class="post-title">
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </span>
+            &mdash;
+            <span class="post-date" style="display:inline">
+                {{ .Date.Format "Jan 2, 2006" }}
+            </span>
         </div>
-    </div>
-    {{ end }}
-    {{ if $paginator.HasPrev }}
-    <a class="btn btn-default" href="{{ .Paginator.Prev.URL }}">
-        &leftarrow; Newer
-    </a>
-    {{ end }}
-    {{ if $paginator.HasNext }}
-    <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">
-        Older &rightarrow;
-    </a>
-{{ end }}
-</div>
+        {{ end }}
+    </section>
 </div>
 
 </body>

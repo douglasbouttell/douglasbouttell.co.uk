@@ -1,0 +1,14 @@
+<p>
+"Welcome to my little bit of of the internet. Here will be a resposity for all my
+innane ramblings and thoughts throughout my life as well as some personal projects.
+</p>
+<p>
+"Remember, all opinions expressed on this website are my own and not of my employers
+or any organisations I am assocated with past, present or future."
+</p>
+{{ with .Site.Params.author }}
+<p style="text-align:right; font-style:italic;">
+     &mdash; {{.}}
+</p>
+{{ else }}
+{{end}}
