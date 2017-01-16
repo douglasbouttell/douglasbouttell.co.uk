@@ -5,14 +5,7 @@ type = "post"
 layout = "post"
 +++
 
-sodhfakshfasd
+Hello Internet!
 
-<!-- more -->
-
-fa
-sd
-f
-asfd
-sa
-df
-sa
+Here is my new fancy website, which uses [Hugo](https://gohugo.io), Travis CI,
+and S3.  Stay tuned for more.
