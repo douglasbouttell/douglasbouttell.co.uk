@@ -1,8 +1,9 @@
 +++
-date = "2017-10-06T20:41:00Z"
+date = "2017-01-06T20:41:00Z"
 title = "My Thoughts on the Nintendo Switch"
 type = "post"
 layout = "post"
+tags = ["Nintendo", "Nintendo Switch", "Video Games", "Rants"]
 +++
 
 So the Nintendo Switch had its price and release date announced and has had a
@@ -64,7 +65,8 @@ Switch and that they don't have to worry about Nintendo wanting exclusivity.
 ### The console isn't even out yet
 
 That being said, its January just now and the Switch is out in March.  The only
-people who have had their hands on a Switch are journalists and Nintendo employees.  
+people who have had their hands on a Switch are journalists and Nintendo employees.
+
 Even if the Switch is *physically* not up to scratch, Nintendo announced that their
 online services will become a paid service.  This throws up a whole load of questions
 about what they will do with the money and what that money will get you.  
@@ -77,7 +79,7 @@ the risk to Nintendo and not benefiting its users) they will try and lure people
 
 So I will conclude this stream on consciousness with something one of my friends
 used to say at school: "calm your beans".  The internet is everyone's soapbox but
-its easy to criticise and not focus on the positives.
+its easy to criticise and not focus on the positives. 
 
 *Note: As of reading this article, I have pre-ordered a Nintendo Switch, Legend
 of Zelda: Breath of the Wild, Mario Kart 8 Deluxe, and Xenoblade 2.*
