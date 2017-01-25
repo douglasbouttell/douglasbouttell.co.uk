@@ -1,0 +1,50 @@
+<header>
+	<h1 class="site-title">
+		<a href="{{ .Site.BaseURL }}">
+			{{ .Site.Title }}
+		</a>
+	</h1>
+	<div class="tagline">{{ .Site.Params.tagline }}</div>
+	<nav>
+		<ul>
+			{{ with .Site.Params.LinkedIn }}
+			<li>
+			    <a href="{{ .URL }}">
+			        <img type="image/svg+xml"
+					class="nav-icon linkedin"
+					title="LinkedIn" alt="LinkedIn"
+					src="/simple-icons/icons/linkedin.svg">
+				</embed>
+			    </a>
+			</li>
+			{{ end }}
+			{{ with .Site.Params.Twitter }}
+			<li>
+			    <a href="{{ .URL }}">
+			        <img class="nav-icon"
+					title="Twitter" alt="Twitter"
+					src="/simple-icons/icons/twitter.svg" />
+			    </a>
+			</li>
+			{{ end }}
+			{{ with .Site.Params.Youtube }}
+			<li>
+			    <a href="{{ .URL }}">
+			        <img class="nav-icon"
+					title="Youtube" alt="Youtube"
+					src="/simple-icons/icons/youtube.svg" />
+			    </a>
+			</li>
+			{{ end }}
+			{{ with .Site.Params.GitHub }}
+			<li>
+			    <a href="{{ .URL }}">
+			        <img class="nav-icon"
+					title="GitHub" alt="GitHub"
+					src="/simple-icons/icons/github.svg" />
+			    </a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</header>

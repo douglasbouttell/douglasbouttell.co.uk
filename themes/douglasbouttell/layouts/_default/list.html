@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+{{ partial "head.html" . }}
+
+<body>
+	<div id="content">
+		{{ partial "header.html" . }}
+		<main>
+			<nav>
+				<ul>
+					{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
+
+			<h2>{{ .Data.Singular | humanize }}: {{ .Title }}</h2>
+
+			{{ $paginator := .Paginate ( where .Site.Pages "Type" "post" ) }}
+			{{ range $paginator.Pages }}
+				{{ partial "summary.html" . }}
+			{{ end }}
+			{{ partial "pagination.html" . }}
+		</main>
+		{{ partial "footer.html" . }}
+	</div>
+</body>
+</html>

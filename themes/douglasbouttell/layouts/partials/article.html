@@ -1,0 +1,16 @@
+<article>
+    <h2>{{ .Title }}</h2>
+    <time>{{ .Date.Format "2 January 2006" }}</time>
+
+    {{ .Content }}
+
+    {{ if .Params.tags }}
+    <div class="tags">
+        Tags: {{ partial "tags/list.html" . }}
+    </div>
+    {{ end }}
+
+    <div>
+        {{ template "_internal/disqus.html" . }}
+    </div>
+</article>

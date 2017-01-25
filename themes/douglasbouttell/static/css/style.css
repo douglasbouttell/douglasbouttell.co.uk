@@ -1,0 +1,202 @@
+small
+{
+}
+
+small.tiny
+{
+    font-size:60%
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+h1
+{
+    font-size: 500%;
+}
+
+h2
+{
+    font-size: 300%;
+}
+
+h3
+{
+    font-size: 200%;
+}
+
+h4
+{
+    font-size: 150%;
+}
+
+h5
+{
+    font-size: 125%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+html
+{
+    background: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover
+{
+    text-decoration: none;
+}
+
+p
+{
+    line-height: 1.45em;
+    text-align: justify;
+}
+
+#content
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+header
+{
+    text-align: center;
+}
+
+header h1
+{
+    margin-bottom: 0.1em;
+}
+
+header .tagline
+{
+    text-transform: uppercase;
+    font-size: 85%;
+    margin-bottom: 3.33em;
+}
+
+header nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul > li
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav .nav-icon
+{
+    width: 24px;
+    height: 24px;
+}
+
+.linkedin path
+{
+    fill: #0077B5;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6
+{
+    margin-bottom: 0.2em;
+}
+
+article .time-and-tags
+{
+    display: block;
+    margin-bottom: 1.8em;
+}
+
+article .time-and-tags .tags a
+{
+    color: inherit;
+}
+
+main,
+footer
+{
+    padding: 20px;
+}
+
+.latest-posts > ul
+{
+}
+
+.latest-posts > ul li
+{
+    line-height: 1.45em;
+}
+
+article.summary .read-more
+{
+    text-align: right;
+}
+
+article time
+{
+    display: block;
+    margin-bottom: 1em;
+}
+
+article .tags
+{
+    line-height: 1.45em;
+    margin: 1em 0;
+}
+
+article .tags a
+{
+    color: inherit;
+}
+
+.pagination
+{
+    margin: 1em 0;
+}
+
+.pagination .prev,
+.pagination .next
+{
+    width: 50%;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 1em;
+}
+
+footer p
+{
+    text-align: inherit;
+}
