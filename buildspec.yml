@@ -1,0 +1,22 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y hugo
+  build:
+    commands:
+      - echo Build started on `date`
+      - hugo -v
+  post_build:
+    commands:
+      - echo Publishing to douglasbouttell.co.uk
+      - aws s3 sync ./public s3://www.douglasbouttell.co.uk/ --delete
+artifacts:
+  files:
+  discard-paths: yes
