@@ -1,4 +1,4 @@
-baseurl = "http://douglasbouttell.co.uk/"
+baseurl = "https://douglasbouttell.co.uk/"
 languageCode = "en-gb"
 title = "Douglas Bouttell"
 copyright = "Douglas Bouttell All rights reserved."
@@ -10,25 +10,25 @@ Paginate = 10
 tagline = "Software, Blinky Lights, and Miscelaneous Hijinx"
 author = "Douglas Bouttell"
 
-[params.LinkedIn]
-Name = "LinkedIn"
-URL = "https://uk.linkedin.com/in/douglasbouttell"
-Color = "#0077B5"
+    [params.linkedin]
+    name = "LinkedIn"
+    url = "https://uk.linkedin.com/in/douglasbouttell"
+    color = "#0077B5"
 
-[params.Twitter]
-Name = "Twitter"
-URL = "https://twitter.com/douglasbouttell"
-Color = "#1DA1F2"
+    [params.twitter]
+    name = "Twitter"
+    url = "https://twitter.com/douglasbouttell"
+    color = "#1DA1F2"
 
-[params.Youtube]
-Name = "Youtube"
-URL = "https://www.youtube.com/user/MrDouglasBouttell/"
-Color = "#CD210F"
+    [params.youtube]
+    name = "Youtube"
+    url = "https://www.youtube.com/user/MrDouglasBouttell/"
+    color = "#CD210F"
 
-[params.GitHub]
-Name = "GitHub"
-URL = "https://github.com/douglasbouttell"
-Color = "#000"
+    [params.github]
+    name = "GitHub"
+    url = "https://github.com/douglasbouttell"
+    color = "#000"
 
 [permalinks]
 posts = "/:year/:month/:title/"

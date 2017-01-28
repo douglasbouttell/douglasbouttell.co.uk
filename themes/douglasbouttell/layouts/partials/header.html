@@ -7,40 +7,40 @@
 	<div class="tagline">{{ .Site.Params.tagline }}</div>
 	<nav>
 		<ul>
-			{{ with .Site.Params.LinkedIn }}
+			{{ with .Site.Params.linkedin }}
 			<li>
-			    <a href="{{ .URL }}">
+			    <a href="{{ .url }}">
 			        <img type="image/svg+xml"
 					class="nav-icon linkedin"
-					title="LinkedIn" alt="LinkedIn"
+					title="{{ .name }}" alt="{{ .name }}"
 					src="/simple-icons/icons/linkedin.svg">
 				</embed>
 			    </a>
 			</li>
 			{{ end }}
-			{{ with .Site.Params.Twitter }}
+			{{ with .Site.Params.twitter }}
 			<li>
-			    <a href="{{ .URL }}">
+			    <a href="{{ .url }}">
 			        <img class="nav-icon"
-					title="Twitter" alt="Twitter"
+					title="{{ .name }}" alt="{{ .name }}"
 					src="/simple-icons/icons/twitter.svg" />
 			    </a>
 			</li>
 			{{ end }}
-			{{ with .Site.Params.Youtube }}
+			{{ with .Site.Params.youtube }}
 			<li>
-			    <a href="{{ .URL }}">
+			    <a href="{{ .url }}">
 			        <img class="nav-icon"
-					title="Youtube" alt="Youtube"
+					title="{{ .name }}" alt="{{ .name }}"
 					src="/simple-icons/icons/youtube.svg" />
 			    </a>
 			</li>
 			{{ end }}
-			{{ with .Site.Params.GitHub }}
+			{{ with .Site.Params.github }}
 			<li>
-			    <a href="{{ .URL }}">
+			    <a href="{{ .url }}">
 			        <img class="nav-icon"
-					title="GitHub" alt="GitHub"
+					title="{{ .name }}" alt="{{ .name }}"
 					src="/simple-icons/icons/github.svg" />
 			    </a>
 			</li>
