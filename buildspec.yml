@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
       - echo Publishing to douglasbouttell.co.uk
-      - aws s3 sync ./public s3://www.douglasbouttell.co.uk/ --delete
+      - aws s3 sync ./public s3://douglasbouttell.co.uk/ --delete
 artifacts:
   files:
   discard-paths: yes
