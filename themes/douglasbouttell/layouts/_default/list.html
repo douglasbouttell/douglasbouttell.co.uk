@@ -14,7 +14,7 @@
 				</ul>
 			</nav>
 
-			<h2>{{ .Data.Singular | humanize }}: {{ .Title }}</h2>
+			<h2>{{ humanize .Data.Singular }}: {{ .Title }}</h2>
 
 			{{ $paginator := .Paginate ( where .Site.Pages "Type" "post" ) }}
 			{{ range $paginator.Pages }}
