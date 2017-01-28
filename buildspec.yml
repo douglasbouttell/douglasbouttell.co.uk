@@ -4,6 +4,7 @@ environment_variables:
   plaintext:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
     HUGO_PKG: https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+    BUCKET: douglasbouttell.co.uk
 
 phases:
   install:
@@ -17,7 +18,8 @@ phases:
   post_build:
     commands:
       - echo Publishing to douglasbouttell.co.uk
-      - aws s3 sync ./public s3://douglasbouttell.co.uk/ --delete
+      - aws s3 sync ./public s3://$BUCKET/ --delete
 artifacts:
   files:
+      - public/*
   discard-paths: yes
