@@ -8,7 +8,7 @@ environment_variables:
 phases:
   install:
     commands:
-      - curl -o hugo.deb $HUGO_PKG
+      - curl -L -o hugo.deb $HUGO_PKG
       - dpkg -i hugo.deb
   build:
     commands:
