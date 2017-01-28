@@ -3,7 +3,7 @@ version: 0.1
 environment_variables:
   plaintext:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-    HUGO_PKG: https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_i386.deb
+    HUGO_PKG: https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
 
 phases:
   install:
