@@ -1,7 +1,0 @@
-<!-- https://gohugo.io/templates/functions/#advanced -->
-{{ with .Params.tags }}
-    {{ $sort := sort . }}
-    {{ $links := apply $sort "partial" "tags/link.html" "." }}
-    {{ $clean := apply $links "chomp" "." }}
-    {{ delimit $clean ", " }}
-{{ end }}

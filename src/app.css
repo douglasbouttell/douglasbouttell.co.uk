@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #108db8;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48pt;
+  font-weight: 800;
+  margin: 1em 0 1em 0;
+}
+
+h2 {
+  font-size: 32pt;
+  font-weight: 800;
+  margin: 0.6em 0 0.6em 0;
+}
+
+h3 {
+  font-size: 24pt;
+  font-weight: 800;
+  margin: 0.6em 0 0.6em 0;
+}
+
+h4 {
+  font-size: 18pt;
+  font-weight: 800;
+  margin: 0.6em 0 0.6em 0;
+}
+
+h5 {
+  font-size: 16pt;
+  font-weight: 800;
+  margin: 0.6em 0 0.6em 0;
+}
+
+h6 {
+  font-size: 12pt;
+  font-weight: 800;
+  margin: 0.6em 0 0.6em 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+p {
+  line-height: 1.2em;
+  margin: 0.8em 0 0.8em 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul > li {
+  margin-left: 32px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol > li {
+  margin-left: 32px;
+}
+
+blockquote {
+  border-left: 5px solid lightgray;
+  padding: 0px 0px 0px 10px;
+}
+
+code {
+  background: #2b2b2b;
+  color: #c0c0c0;
+  padding: 0 0.2em 0.1em 0.2em;
+}
+
+code.hljs {
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+/*pre {*/
+  /*border: 1px solid gray;*/
+  /*padding: 16px;*/
+  /*background: #0a0a0a;*/
+  /*color: white;*/
+/*}*/
+
+/*pre > code {*/
+  /*background: inherit;*/
+  /*color: inherit;*/
+/*}*/
+
+table {
+  border: 2px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid #000000;
+  padding: 5px 5px;
+}
+
+table thead {
+  background: #CFCFCF;
+  border-bottom: 3px solid #000000;
+}
+
+table thead th {
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+table tfoot {
+  font-weight: bold;
+  color: #000000;
+  border-top: 3px solid #000000;
+}
+
+table tfoot td {
+}
+
+main {
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+main > .container {
+  max-width: 800px;
+  margin: auto;
+}

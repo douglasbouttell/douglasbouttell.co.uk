@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+nav.main {
+    background: indigo;
+    color: white;
+    padding: 1em;
+}
+
+nav.main > div {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav.main > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.main .title {
+    font-family: 'Yellowtail', cursive;
+    font-weight: normal;
+    font-size: 200%;
+    min-width: 200px;
+}
+
+nav.main a {
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav.main a svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+
+@media screen and (max-width: 575px) {
+    nav.main {
+        padding: 1em;
+    }
+
+    nav.main > div {
+        flex-direction: column;
+    }
+}

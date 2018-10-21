@@ -1,0 +1,20 @@
+footer {
+    display: flex;
+    align-items: center;
+    color: lightslategray;
+    text-align: center;
+    padding: 1em;
+    min-height: 50px;
+}
+
+footer > div {
+    flex: 1;
+}
+
+footer a {
+    color: inherit
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
