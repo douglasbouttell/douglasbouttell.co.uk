@@ -1,5 +1,6 @@
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     color: lightslategray;
     text-align: center;
@@ -9,6 +10,11 @@ footer {
 
 footer > div {
     flex: 1;
+    margin: 16px 0;
+}
+
+footer > div.small-print {
+    font-size: 60%;
 }
 
 footer a {
