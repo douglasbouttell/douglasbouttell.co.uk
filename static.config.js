@@ -44,7 +44,20 @@ const markdownRoutes = async () => {
     const markdown = fs.readFileSync(filePath).toString('utf8');
     const converter = newConverter();
     const html = converter.makeHtml(markdown);
-    const meta = converter.getMetadata();
+    const raw_meta = converter.getMetadata(true);
+    // Get around a bug in showdown which will take the
+    // farthest colon in the meta block
+    const meta = raw_meta
+      .split('\n')
+      .map(line => {
+        if (line) {
+          const match = metaRegex.exec(line);
+          return {[match[1]]: match[2].trim()}
+        } else {
+          return {}
+        }
+      })
+      .reduce((a, b) => Object.assign(a, b));
 
     return {
       filePath,
@@ -53,10 +66,13 @@ const markdownRoutes = async () => {
       getData: () => ({
         markdown,
         html,
-        meta
+        meta,
+        raw_meta
       }),
     }
   };
+
+  const metaRegex = /^(.*?):(.*)$/;
 
   const postparse = (filePath) => {
     const routePath = path.dirname(filePath).replace(/^content\\/, '');
