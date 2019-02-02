@@ -1,6 +1,5 @@
 import * as React from 'react'
 import {Link, SiteData} from "react-static"
-import {Sticky} from 'react-sticky'
 //
 import './Nav.css'
 //
@@ -9,32 +8,28 @@ import {SimpleIcon} from "./SimpleIcon"
 export class Nav extends React.Component {
   render() {
     return (
-      <Sticky>
-        {({style}) =>
-          <nav style={style} className='main'>
-            <SiteData>
-              {({navLinks, iconLinks}) =>
-                <div>
-                  <div style={{flex: 1}} className='title'>
-                    <Link exact to="/">douglas bouttell</Link>
-                  </div>
-                  <div style={{flex: 99}}/>
-                  {navLinks && Object.keys(navLinks).map(k =>
-                    <div key={navLinks[k]} style={{flex: 1, minWidth: '102px'}}>
-                      <Link to={navLinks[k]}>{k}</Link>
-                    </div>)
-                  }
-                  {iconLinks &&
-                  <div style={{flex: 1}}>
-                    {Object.keys(iconLinks).map(icon =>
-                      <Link key={icon} to={iconLinks[icon]}><SimpleIcon icon={icon}/></Link>)}
-                  </div>}
-                </div>
+      <nav className='main'>
+        <SiteData>
+          {({navLinks, iconLinks}) =>
+            <div className="nav-container">
+              <div className='title'>
+                <Link exact to="/">douglasbouttell.co.uk</Link>
+              </div>
+              <div style={{flex: 99}}/>
+              {navLinks && Object.keys(navLinks).map(k =>
+                <div key={navLinks[k]} className='links text' style={{flex: 1}}>
+                  <Link to={navLinks[k]}>{k}</Link>
+                </div>)
               }
-            </SiteData>
-          </nav>
-        }
-      </Sticky>
+              {iconLinks &&
+              <div className='links'>
+                {Object.keys(iconLinks).map(icon =>
+                  <Link key={icon} to={iconLinks[icon]}><SimpleIcon icon={icon}/></Link>)}
+              </div>}
+            </div>
+          }
+        </SiteData>
+      </nav>
     )
   }
 }

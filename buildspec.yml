@@ -1,0 +1,21 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    BUCKET: douglasbouttell.co.uk
+
+phases:
+  install:
+    commands:
+    - npm install
+  build:
+    commands:
+    - npm run build
+  post_build:
+    commands:
+    - echo Publishing to douglasbouttell.co.uk
+    - aws s3 sync ./dist s3://$BUCKET/ --delete
+artifacts:
+  files:
+  - dist/*
+  discard-paths: yes

@@ -1,49 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
-nav.main {
-    background: indigo;
-    color: white;
-    padding: 1em;
+nav {
+    background: linear-gradient(white 90%, rgba(1.0, 1.0, 1.0, 0.0));
+    color: black;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
 }
 
-nav.main > div {
+nav.main {
+    padding: 1em 1em 1em 1em;
+}
+
+nav.main > .nav-container {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav.main > div > div {
+nav.main > .nav-container > div {
+}
+
+nav.main > .nav-container > div.links {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 nav.main .title {
     font-family: 'Yellowtail', cursive;
     font-weight: normal;
     font-size: 200%;
-    min-width: 200px;
+    flex: 1;
 }
 
 nav.main a {
-    color: white;
+    color: inherit;
     padding: 0.5rem;
     text-align: center;
     vertical-align: middle;
 }
 
+nav.main .text a {
+    color: inherit;
+    font-weight: 600;
+}
+
 nav.main a svg {
     width: 32px;
     height: 32px;
-    fill: white;
+    fill: black;
+}
+
+nav .navlink {
+    flex: 1;
 }
 
 @media screen and (max-width: 575px) {
+    nav {
+        display: initial;
+    }
+
     nav.main {
         padding: 1em;
     }
 
-    nav.main > div {
+
+    nav.main .title {
+        margin-bottom: 1em;
+    }
+
+    nav.main > .nav-container {
         flex-direction: column;
     }
 }

@@ -1,0 +1,12 @@
+ul.recent-posts {
+    list-style-type: none;
+}
+
+ul.recent-posts > li {
+    margin-left: 0;
+}
+
+ul.recent-posts > li > time {
+    color: gray;
+    font-size: 70%;
+}

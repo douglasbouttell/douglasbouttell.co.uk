@@ -2,7 +2,6 @@ import React from 'react'
 import {Router, withLoading} from 'react-static'
 import Routes from 'react-static-routes'
 import {hot} from 'react-hot-loader'
-import {StickyContainer} from 'react-sticky'
 //
 // reset must be before app
 import './reset.css'
@@ -18,13 +17,11 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <StickyContainer>
-            <Nav/>
-            <main>
-              <Routes/>
-            </main>
-            <Footer/>
-          </StickyContainer>
+          <Nav/>
+          <main>
+            <Routes/>
+          </main>
+          <Footer/>
         </div>
       </Router>
     );
