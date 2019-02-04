@@ -100,6 +100,7 @@ blockquote {
 }
 
 code {
+  font-size: 90%;
   background: #2b2b2b;
   color: white;
   padding: 0 0.2em 0.1em 0.2em;
@@ -110,6 +111,7 @@ code {
 code.hljs {
   font-family: 'Source Code Pro', monospace;
   border-radius: 5px;
+  line-height: 1.3em;
 }
 
 /*pre {*/
