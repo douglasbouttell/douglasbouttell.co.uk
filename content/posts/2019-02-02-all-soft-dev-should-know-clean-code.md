@@ -1,5 +1,5 @@
 ---
-date: 2019-02-02T16:00:00Z
+date: 2019-02-04T16:00:00Z
 author: Douglas Bouttell
 title: All Software Developers Should Know... Part 1: Clean Code
 slug: soft-dev-should-know-1-clean-code
