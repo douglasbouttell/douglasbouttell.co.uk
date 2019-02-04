@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
 nav {
-    background: linear-gradient(white 90%, rgba(1.0, 1.0, 1.0, 0.0));
+    background: white;
     color: black;
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
+    box-shadow: 0 0 16px 16px white;
 }
 
 nav.main {
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 0;
 }
 
 nav.main > .nav-container {
