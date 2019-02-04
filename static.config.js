@@ -78,9 +78,10 @@ const markdownRoutes = async () => {
     const meta = parsed.getData().meta;
     const date = new Date(meta.date);
     const slug = meta.slug || meta.title.toLowerCase().replace(/[^a-z0-9 ]+/gi, '').replace(/\W+/g, '-');
+    const path = `posts/${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()}/${slug}`;
     return {
       ...parsed,
-      path: `posts/${date.getFullYear()}/${date.getMonth()}/${date.getDate()}/${slug}`,
+      path,
       component: 'src/containers/Post',
     }
   };
