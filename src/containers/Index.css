@@ -1,12 +1,16 @@
-ul.recent-posts {
+#index-content {
+    margin-bottom: 3em;
+}
+
+ul.posts {
     list-style-type: none;
 }
 
-ul.recent-posts > li {
+ul.posts > li {
     margin-left: 0;
 }
 
-ul.recent-posts > li > time {
+ul.posts > li > time {
     color: gray;
     font-size: 70%;
 }
