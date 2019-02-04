@@ -13,5 +13,3 @@ Since I now know React from my work at Amazon, I decided to recode
 this entire site using react-static.  This gives me a lot more control
 over the site structure and content rather than having to battle with
 Hugo on how I include a simple static page.
-
-\- D
