@@ -37,10 +37,9 @@ const markdownRoutes = async () => {
   const indexMdOnly = (file, stats) => !(stats.isDirectory() || path.basename(file).endsWith('.md'));
 
   const posts = (await recursive('content\\posts', [indexMdOnly]));
-  console.log({posts})
 
   const staticparse = (filePath) => {
-    // console.log({filePath})
+    console.log(`Parsing ${filePath}`);
     const markdown = fs.readFileSync(filePath).toString('utf8');
     const converter = newConverter();
     const html = converter.makeHtml(markdown);
@@ -75,8 +74,6 @@ const markdownRoutes = async () => {
   const metaRegex = /^(.*?):(.*)$/;
 
   const postparse = (filePath) => {
-    const routePath = path.dirname(filePath).replace(/^content\\/, '');
-    console.log({filePath, routePath})
     const parsed = staticparse(filePath);
     const meta = parsed.getData().meta;
     const date = new Date(meta.date);
@@ -95,8 +92,6 @@ const markdownRoutes = async () => {
     path: '/',
     component: 'src/containers/Index',
   };
-
-  console.log({parsed_posts})
 
   const with_post_info = (page, posts) => ({
     ...page,
@@ -119,8 +114,7 @@ const markdownRoutes = async () => {
     getData: () => {}
   }, parsed_posts);
 
-  console.log(index_with_post_info);
-  return [
+  const result = [
     ...parsed_posts,
     index_with_post_info,
     all_posts,
@@ -129,6 +123,9 @@ const markdownRoutes = async () => {
       path: '/about'
     },
   ];
+
+  console.log(result);
+  return result;
 };
 
 export default {
