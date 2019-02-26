@@ -8,6 +8,10 @@ footer {
     min-height: 50px;
 }
 
+footer img {
+    vertical-align: bottom;
+}
+
 footer > div {
     flex: 1;
     margin: 16px 0;

@@ -13,7 +13,10 @@ export class Footer extends React.Component {
               <div>
                 Built with <span style={{color: 'red'}}>❤</span>{' '}
                 and <Link to='https://github.com/nozzle/react-static'>react-static</Link>{' | '}
-                Copyright &copy; {siteData.copyright} 2018&ndash;{new Date(siteData.lastBuilt).getFullYear()}
+                Copyright &copy; {siteData.copyright} 2018&ndash;{new Date(siteData.lastBuilt).getFullYear()}{' | '}
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                  <img alt="Creative Commons License" style={{ 'border-width':0 }} src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                </a>
               </div>
               <div className="small-print">
                 All views and opinions expressed on this website are that of {siteData.copyright}.
