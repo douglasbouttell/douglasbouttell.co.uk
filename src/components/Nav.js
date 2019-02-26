@@ -15,16 +15,12 @@ export class Nav extends React.Component {
               <div className='title'>
                 <Link exact to="/">douglasbouttell.co.uk</Link>
               </div>
-              <div style={{flex: 99}}/>
-              {navLinks && Object.keys(navLinks).map(k =>
-                <div key={navLinks[k]} className='links text' style={{flex: 1}}>
-                  <Link to={navLinks[k]}>{k}</Link>
-                </div>)
-              }
               {iconLinks &&
               <div className='links'>
+                <div className='line'/>
                 {Object.keys(iconLinks).map(icon =>
                   <Link key={icon} to={iconLinks[icon]}><SimpleIcon icon={icon}/></Link>)}
+                <div className='line'/>
               </div>}
             </div>
           }

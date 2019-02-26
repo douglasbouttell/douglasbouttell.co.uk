@@ -3,10 +3,6 @@
 nav {
     background: white;
     color: black;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    box-shadow: 0 0 16px 16px white;
 }
 
 nav.main {
@@ -17,6 +13,7 @@ nav.main > .nav-container {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,28 +28,35 @@ nav.main > .nav-container > div.links {
     flex: 1;
 }
 
+nav.main > .nav-container > div.links > .line {
+    width: 200px;
+    height: 1px;
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+
+nav.main > .nav-container > div.links > a {
+    flex: 0 0 32px;
+}
+
 nav.main .title {
+    margin: 0.75em 0;
     font-family: 'Yellowtail', cursive;
     font-weight: normal;
-    font-size: 200%;
+    font-size: 300%;
     flex: 1;
 }
 
 nav.main a {
     color: inherit;
-    padding: 0.5rem;
+    padding: 8px;
     text-align: center;
     vertical-align: middle;
 }
 
-nav.main .text a {
-    color: inherit;
-    font-weight: 600;
-}
-
 nav.main a svg {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     fill: black;
 }
 
@@ -72,9 +76,5 @@ nav .navlink {
 
     nav.main .title {
         margin-bottom: 1em;
-    }
-
-    nav.main > .nav-container {
-        flex-direction: column;
     }
 }
