@@ -1,18 +1,18 @@
 #index-content {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .posts {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 .posts > li {
-    /*margin-left: 0;
+  /*margin-left: 0;
     margin-top: 8px;
     margin-bottom: 8px;*/
 }
 
 .posts > li > time {
-    color: gray;
-    font-size: 70%;
+  color: gray;
+  font-size: 70%;
 }

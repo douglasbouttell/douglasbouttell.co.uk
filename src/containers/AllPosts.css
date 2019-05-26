@@ -1,12 +1,12 @@
 ul.all-posts {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul.all-posts > li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 ul.all-posts > li > time {
-    color: gray;
-    font-size: 70%;
+  color: gray;
+  font-size: 70%;
 }

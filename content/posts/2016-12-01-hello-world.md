@@ -7,4 +7,4 @@ title: Hello World
 Hello Internet!
 
 Here is my new fancy website, which uses [Hugo](https://gohugo.io), Travis CI,
-and S3.  Stay tuned for more.
+and S3. Stay tuned for more.

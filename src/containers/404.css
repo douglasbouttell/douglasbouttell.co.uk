@@ -1,10 +1,10 @@
 #error404 {
-    text-align: center;
+  text-align: center;
 }
 
 #error404 h1 {
-    padding: 0;
-    margin: 0;
-    font-weight: lighter;
-    font-size: 128pt;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 128pt;
 }

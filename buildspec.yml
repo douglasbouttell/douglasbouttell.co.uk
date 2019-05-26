@@ -7,15 +7,15 @@ environment_variables:
 phases:
   install:
     commands:
-    - npm install
+      - npm install
   build:
     commands:
-    - npm run build
+      - npm run build
   post_build:
     commands:
-    - echo Publishing to douglasbouttell.co.uk
-    - aws s3 sync ./dist s3://$BUCKET/ --delete
+      - echo Publishing to douglasbouttell.co.uk
+      - aws s3 sync ./dist s3://$BUCKET/ --delete
 artifacts:
   files:
-  - dist/*
+    - dist/*
   discard-paths: yes
