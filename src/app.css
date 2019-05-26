@@ -101,11 +101,13 @@ blockquote {
 
 code {
   font-size: 90%;
-  background: #2b2b2b;
-  color: white;
+  color: #2b2b2b;
+  background: white;
   padding: 0 0.2em 0.1em 0.2em;
   font-family: 'Source Code Pro', monospace;
+  border: 1px solid #2b2b2b;
   border-radius: 3px;
+  font-weight: 500;
 }
 
 code.hljs {
@@ -160,10 +162,10 @@ table tfoot td {
 
 main {
   padding: 0rem 3rem;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 main > .container {
-  max-width: 780px;
+  max-width: 600px;
   margin: auto;
 }

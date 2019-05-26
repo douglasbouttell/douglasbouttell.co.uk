@@ -2,15 +2,17 @@
     margin-bottom: 3em;
 }
 
-ul.posts {
-    list-style-type: none;
+.posts {
+    list-style-type: disc;
 }
 
-ul.posts > li {
-    margin-left: 0;
+.posts > li {
+    /*margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;*/
 }
 
-ul.posts > li > time {
+.posts > li > time {
     color: gray;
     font-size: 70%;
 }

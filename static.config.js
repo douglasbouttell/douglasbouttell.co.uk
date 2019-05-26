@@ -33,45 +33,45 @@ const newConverter = () => {
   return c;
 };
 
+
+const staticparse = (filePath) => {
+  console.log(`Parsing ${filePath}`);
+  const metaRegex = /^(.*?):(.*)$/;
+  const markdown = fs.readFileSync(filePath).toString('utf8');
+  const converter = newConverter();
+  const html = converter.makeHtml(markdown);
+  const raw_meta = converter.getMetadata(true);
+  // Get around a bug in showdown which will take the
+  // farthest colon in the meta block
+  const meta = raw_meta
+  .split('\n')
+  .map(line => {
+    if (line) {
+      const match = metaRegex.exec(line);
+      return {[match[1]]: match[2].trim()}
+    } else {
+      return {}
+    }
+  })
+  .reduce((a, b) => Object.assign(a, b));
+
+  return {
+    filePath,
+    path: undefined,
+    component: 'src/containers/RenderMarkdown',
+    getData: () => ({
+      markdown,
+      html,
+      meta,
+      raw_meta
+    }),
+  }
+};
+
 const markdownRoutes = async () => {
   const indexMdOnly = (file, stats) => !(stats.isDirectory() || path.basename(file).endsWith('.md'));
 
   const posts = (await recursive('content\\posts', [indexMdOnly]));
-
-  const staticparse = (filePath) => {
-    console.log(`Parsing ${filePath}`);
-    const markdown = fs.readFileSync(filePath).toString('utf8');
-    const converter = newConverter();
-    const html = converter.makeHtml(markdown);
-    const raw_meta = converter.getMetadata(true);
-    // Get around a bug in showdown which will take the
-    // farthest colon in the meta block
-    const meta = raw_meta
-      .split('\n')
-      .map(line => {
-        if (line) {
-          const match = metaRegex.exec(line);
-          return {[match[1]]: match[2].trim()}
-        } else {
-          return {}
-        }
-      })
-      .reduce((a, b) => Object.assign(a, b));
-
-    return {
-      filePath,
-      path: undefined,
-      component: 'src/containers/RenderMarkdown',
-      getData: () => ({
-        markdown,
-        html,
-        meta,
-        raw_meta
-      }),
-    }
-  };
-
-  const metaRegex = /^(.*?):(.*)$/;
 
   const postparse = (filePath) => {
     const parsed = staticparse(filePath);
@@ -134,14 +134,12 @@ export default {
     title: 'Douglas Bouttell',
     copyright: 'Douglas Bouttell',
     lastBuilt: new Date(),
-    navLinks: {
-      'About': '/about'
-    },
     iconLinks: {
       'GitHub': 'https://github.com/douglasbouttell',
       'LinkedIn': 'https://www.linkedin.com/in/douglasbouttell/',
       'Twitter': 'https://twitter.com/douglasbouttell'
-    }
+    },
+    biography: staticparse('content/biography.md').getData().html
   }),
   getRoutes: async () => {
     return [

@@ -12,7 +12,10 @@ const RenderMarkdown = (props) => {
           : <title>{siteData.title}</title>
         }
       </Head>
-      <div className="container">{convert(html)}</div>
+      <div className="container">
+        {meta.title && <h1>{meta.title}</h1>}
+        {convert(html)}
+      </div>
     </React.Fragment>
   );
 };

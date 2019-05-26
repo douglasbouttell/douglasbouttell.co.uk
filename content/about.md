@@ -2,7 +2,6 @@
 title: About
 ---
 
-# About
 Born, Glasgow, Scotland in 1990.  I studied Computer and Electronic Systems (a joint degree
 in Computer Science and Electronic Engineering) at the [University of Strathclyde](https://www.strath.ac.uk), 
 graduating with a Masters in Engineering.

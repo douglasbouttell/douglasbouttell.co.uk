@@ -28,3 +28,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+aside#biography {
+    max-width: 600px;
+    margin: 96px auto 0 auto;
+}
