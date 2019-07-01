@@ -8,3 +8,8 @@
   font-size: 80%;
   margin-bottom: 5em;
 }
+
+article img {
+  display: block;
+  margin: 10px auto;
+}
