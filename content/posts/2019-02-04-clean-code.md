@@ -1,7 +1,7 @@
 ---
 date: 2019-02-04T16:00:00Z
 author: Douglas Bouttell
-title: In Defense Of: Clean Code
+title: Clean Code ✨
 ---
 
 Hello Internet.
@@ -39,6 +39,8 @@ versus
 
 /**
  * Get the extension of the filename, from the first separator
+ * @param filename the filename to search over
+ * @param result a string pointer to store the result
  * @returns the number of bytes copied, or 0 if nothing is copied
  */
 void getFileExtension(char* filename, char* result) {
