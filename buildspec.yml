@@ -6,6 +6,8 @@ environment_variables:
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 10
     commands:
       - npm install
   build:
@@ -16,6 +18,7 @@ phases:
       - echo Publishing to douglasbouttell.co.uk
       - aws s3 sync ./dist s3://$BUCKET/ --delete
 artifacts:
+  base_directory: 'dist'
   files:
-    - dist/*
+    - '**/*'
   discard-paths: yes
