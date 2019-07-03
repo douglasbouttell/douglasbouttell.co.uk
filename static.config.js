@@ -71,7 +71,7 @@ const staticparse = (filePath) => {
 const markdownRoutes = async () => {
   const indexMdOnly = (file, stats) => !(stats.isDirectory() || path.basename(file).endsWith('.md'));
 
-  const posts = (await recursive('content\\posts', [indexMdOnly]));
+  const posts = (await recursive('content/posts', [indexMdOnly]));
 
   const postparse = (filePath) => {
     const parsed = staticparse(filePath);
@@ -130,6 +130,7 @@ const markdownRoutes = async () => {
 };
 
 export default {
+  siteRoot: 'https://www.douglasbouttell.co.uk',
   getSiteData: () => ({
     title: 'Douglas Bouttell',
     copyright: 'Douglas Bouttell',

@@ -4,6 +4,4 @@ movies, and whatever else takes my fancy
 
 \- Douglas
 
-### Pages
 
-- [Douglas' Laws of Software](/laws-of-software)
