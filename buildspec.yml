@@ -1,24 +1,14 @@
 version: 0.2
 
-environment_variables:
-  plaintext:
-    BUCKET: douglasbouttell.co.uk
-
 phases:
   install:
     runtime-versions:
       nodejs: 10
-    commands:
-      - npm install
   build:
     commands:
+      - npm install
       - npm run build
-  post_build:
-    commands:
-      - echo Publishing to douglasbouttell.co.uk
-      - aws s3 sync ./dist s3://$BUCKET/ --delete
 artifacts:
   base_directory: 'dist'
   files:
     - '**/*'
-  discard-paths: yes
