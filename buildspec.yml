@@ -9,6 +9,6 @@ phases:
       - npm install
       - npm run build
 artifacts:
-  base_directory: 'dist'
+  base-directory: 'dist'
   files:
     - '**/*'
