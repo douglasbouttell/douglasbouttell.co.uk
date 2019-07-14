@@ -130,7 +130,7 @@ const markdownRoutes = async () => {
 };
 
 export default {
-  siteRoot: 'http://douglasbouttell.co.uk',
+  siteRoot: '//douglasbouttell.co.uk',
   getSiteData: () => ({
     title: 'Douglas Bouttell',
     copyright: 'Douglas Bouttell',
