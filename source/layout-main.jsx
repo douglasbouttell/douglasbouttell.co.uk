@@ -4,9 +4,12 @@
 export default (props) => (
   <html>
   <head>
-    <title>{!!props.title ? `${props.title} | ` : ""}Douglas Bouttell</title>
+    <meta charSet="UTF-8"/>
+    <meta name="description" content="Douglas Bouttell blog"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="/css/reset.css" rel="stylesheet" type="text/css"/>
     <link href="/css/app.css" rel="stylesheet" type="text/css"/>
+    <title>{!!props.title ? `${props.title} | ` : ""}Douglas Bouttell</title>
   </head>
   <body>
   <header className="main">
