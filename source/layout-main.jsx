@@ -32,7 +32,7 @@ export default (props) => (
         to Ruby to Javascript and beyond.
       </p>
 
-      <p><a href="/about">Read More...</a></p>
+      <p><a href="/about.html">Read More...</a></p>
     </div>
   </aside>
   <footer>
