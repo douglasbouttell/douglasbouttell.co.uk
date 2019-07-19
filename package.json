@@ -1,34 +1,15 @@
 {
   "name": "douglasbouttell",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
-    "serve": "serve dist -p 3000",
+    "start": "charge serve source",
+    "build": "charge build source dist",
     "prettier": "prettier --config .prettierrc.json --write {src,content}/**/*"
   },
-  "dependencies": {
-    "chokidar": "2.0.4",
-    "classnames": "^2.2.6",
-    "htmr": "0.7.0",
-    "showdown": "^1.9.0",
-    "showdown-highlight": "^2.1.3",
-    "moment": "^2.23.0",
-    "simple-icons": "^1.9.6",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-hot-loader": "^4.3.11",
-    "react-router": "^4.3.1",
-    "react-static": "^5.9.12",
-    "react-static-routes": "^1.0.0",
-    "recursive-readdir": "^2.2.2"
-  },
   "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
-    "serve": "^10.0.2",
+    "@static/charge": "^1.4.1",
+    "date-fns": "^1.30.1",
     "prettier": "^1.17.1"
   }
 }

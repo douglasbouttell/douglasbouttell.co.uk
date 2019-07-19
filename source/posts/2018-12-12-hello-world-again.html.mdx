@@ -1,8 +1,13 @@
----
-date: 2018-12-12T22:30:00Z
-author: Douglas Bouttell
-title: Hello World... again
----
+import LayoutMain from "../layout-main.jsx"
+import PostHeader from "./header"
+export const meta = {
+  date: "2018-12-12T22:30:00Z",
+  title: "Hello World... again",
+  author: "Douglas Bouttell"
+}
+export const layout = (props) => <LayoutMain title={meta.title} {...props}/>
+
+<PostHeader {...meta}/>
 
 Hello Internet, once again.
 

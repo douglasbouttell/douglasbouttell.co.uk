@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
 
 body {
   font-family: "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -111,9 +111,12 @@ code {
 }
 
 code.hljs {
+  display: block;
+  overflow-x: auto;
   font-family: "Source Code Pro", monospace;
   border-radius: 5px;
   line-height: 1.3em;
+  padding: 0.5em;
 }
 
 /*pre {*/
@@ -161,12 +164,97 @@ table tfoot {
 table tfoot td {
 }
 
+.post-title-details {
+  color: gray;
+  text-align: center;
+  font-size: 80%;
+  margin-bottom: 5em;
+}
+
+ul.posts {
+  list-style-type: none;
+}
+
+ul.posts > li {
+  margin: 1em 0;
+}
+
+ul.posts > li a {
+  font-size: 14pt;
+  color: inherit;
+  display: block;
+}
+
+ul.posts > li desc {
+  font-size: 10pt;
+  color: lightgray;
+  display: block;
+}
+
+article img {
+  display: block;
+  margin: 10px auto;
+}
+
 main {
   padding: 0rem 3rem;
   min-height: 50vh;
 }
 
-main > .container {
+.container {
   max-width: 600px;
   margin: auto;
+}
+
+body > header {
+  background: black;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+body > header a {
+  color: inherit;
+  font-family: 'Squada One', sans-serif;
+  text-transform: uppercase;
+  font-size: 18pt;
+}
+
+aside#biography {
+  background: aliceblue;
+  padding: 2em 0;
+  margin-top: 2em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 1em;
+  min-height: 50px;
+}
+
+footer img {
+  vertical-align: bottom;
+}
+
+footer > div {
+  flex: 1;
+  margin: 16px auto;
+  max-width: 600px;
+}
+
+footer > div.small-print {
+  font-size: 60%;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
