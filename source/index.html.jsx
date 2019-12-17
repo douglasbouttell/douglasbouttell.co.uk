@@ -1,6 +1,6 @@
 import LayoutMain from './layout-main.jsx';
 import format from 'date-fns/format';
-import parse from 'date-fns/parse';
+import parseISO from 'date-fns/parseISO';
 
 export default (props) => (
   <LayoutMain {...props}>
@@ -16,8 +16,8 @@ export default (props) => (
             <br />
             <desc>
               {page.meta.author} posted on{' '}
-              <time dateTime={format(parse(page.meta.date), 'YYYY-MM-DD')}>
-                {format(parse(page.meta.date), 'Do MMMM YYYY')}
+              <time dateTime={format(parseISO(page.meta.date), 'yyyy-MM-dd')}>
+                {format(parseISO(page.meta.date), 'Do MMMM yyyy')}
               </time>
             </desc>
           </li>
