@@ -47,17 +47,19 @@ export default (props) => (
       <Ribbon />
       <Header>Douglas Bouttell</Header>
       <Main>{props.children}</Main>
-      <Aside id="biography">
-        <hr style={{ margin: '3rem 0' }} aria-hidden="true" />
-        <h4>Who is Douglas?</h4>
-        <p>
-          Born, Glasgow, Scotland. I studied Computer and Electronic Systems
-          graduating with a Masters in Engineering. Going from QBasic to Java to
-          C to Perl to Python to Ruby to Javascript and beyond.{' '}
-          <a href="/about.html">Read More...</a>
-        </p>
-        <hr style={{ margin: '3rem 0' }} aria-hidden="true" />
-      </Aside>
+      {!props.noBio && (
+        <Aside id="biography">
+          <hr style={{ margin: '3rem 0' }} aria-hidden="true" />
+          <h4>Who is Douglas?</h4>
+          <p>
+            Born, Glasgow, Scotland. I studied Computer and Electronic Systems
+            graduating with a Masters in Engineering. Going from QBasic to Java
+            to C to Perl to Python to Ruby to Javascript and beyond.{' '}
+            <a href="/about.html">Read More...</a>
+          </p>
+          <hr style={{ margin: '3rem 0' }} aria-hidden="true" />
+        </Aside>
+      )}
       <Footer>
         <div id="notices">
           <span id="copyright">
