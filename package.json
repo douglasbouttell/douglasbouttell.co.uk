@@ -5,7 +5,7 @@
   "scripts": {
     "start": "charge serve source",
     "build": "charge build source dist",
-    "prettier": "prettier --config .prettierrc.json --write {src,content}/**/*"
+    "prettier": "prettier --config .prettierrc.json --write source/**/*"
   },
   "devDependencies": {
     "@static/charge": "^1.4.1",
