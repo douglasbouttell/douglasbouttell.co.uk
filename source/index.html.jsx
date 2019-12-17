@@ -17,7 +17,7 @@ export default (props) => (
             <desc>
               {page.meta.author} posted on{' '}
               <time dateTime={format(parseISO(page.meta.date), 'yyyy-MM-dd')}>
-                {format(parseISO(page.meta.date), 'Do MMMM yyyy')}
+                {format(parseISO(page.meta.date), 'do MMMM yyyy')}
               </time>
             </desc>
           </li>

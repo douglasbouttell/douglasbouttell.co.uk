@@ -7,7 +7,7 @@ export default ({ title, date, author }) => (
     <desc className="post-title-details">
       By {author} on{' '}
       <time dateTime={format(parseISO(date), 'yyyy-MM-dd')}>
-        {format(parseISO(date), 'Do MMMM yyyy')}
+        {format(parseISO(date), 'do MMMM yyyy')}
       </time>
     </desc>
   </>
