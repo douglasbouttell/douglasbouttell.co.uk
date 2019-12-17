@@ -7,9 +7,16 @@
     "build": "charge build source dist",
     "prettier": "prettier --config .prettierrc.json --write source/**/*"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "devDependencies": {
-    "@static/charge": "^1.4.1",
-    "date-fns": "^1.30.1",
-    "prettier": "^1.17.1"
+    "@static/charge": "^1.5.0",
+    "date-fns": "^2.8.1",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
   }
 }
