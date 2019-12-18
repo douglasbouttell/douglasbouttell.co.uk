@@ -219,7 +219,7 @@ footer {
 }
 
 body > header {
-  padding: 64px 16px;
+  padding: 5rem 16px;
   text-align: center;
   font-family: 'Libre Barcode 128 Text', 'Courier New', monospace;
   font-size: 82pt;
@@ -271,6 +271,10 @@ footer {
   text-align: center;
   min-height: 50px;
   margin-bottom: 24px;
+}
+
+footer.no-bio {
+  margin-top: 5rem;
 }
 
 footer #notices > span {

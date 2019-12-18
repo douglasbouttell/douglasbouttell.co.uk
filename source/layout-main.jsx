@@ -60,7 +60,7 @@ export default (props) => (
           <hr style={{ margin: '3rem 0' }} aria-hidden="true" />
         </Aside>
       )}
-      <Footer>
+      <Footer className={props.noBio ? 'no-bio' : undefined}>
         <div id="notices">
           <span id="copyright">
             Copyright &copy; Douglas Bouttell 2018&ndash;

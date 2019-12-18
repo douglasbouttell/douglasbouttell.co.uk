@@ -1,5 +1,7 @@
 import LayoutMain from './layout-main.jsx';
-export const layout = (props) => <LayoutMain title="About" {...props} />;
+export const layout = (props) => (
+  <LayoutMain title="About" noBio={true} {...props} />
+);
 
 Born, Glasgow, Scotland in 1990. I studied Computer and Electronic Systems (a
 joint degree in Computer Science and Electronic Engineering) at the
