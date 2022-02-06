@@ -1,14 +1,9 @@
-import LayoutMain from '../layout-main.jsx';
-import PostHeader from './header';
-export const meta = {
-  date: '2018-12-12T22:30:00Z',
-  title: 'Hello World... again',
-  author: 'Douglas Bouttell'
-};
-export const layout = (props) => <LayoutMain title={meta.title} {...props} />;
-
-<PostHeader {...meta} />
-
+---
+title: Hello World... again
+date: 2018-12-12T22:30:00Z
+layout: layouts/post.njk
+tags: post
+---
 Hello Internet, once again.
 
 So I haven't really used this site for over two years, been super busy with work

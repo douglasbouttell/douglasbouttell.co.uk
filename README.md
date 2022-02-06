@@ -1,3 +1,3 @@
 # [douglasbouttell.co.uk](douglasbouttell.co.uk)
 
-Uses [@static/charge](https://charge.js.org) to generate the site.
+Uses [@11ty/eleventy](https://www.11ty.dev/) to generate the site.

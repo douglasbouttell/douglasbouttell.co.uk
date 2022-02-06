@@ -1,0 +1,22 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+<h1>Blog posts</h1>
+<nav id="postlist">
+  <ol reversed style="counter-reset: start-from {{ collections.post.length + 1 }}">
+  {% for post in collections.post | reverse %}
+    <li>
+      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+      &mdash;
+      <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      {% for tag in post.data.tags | filterTagList %}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    </li>
+  {% endfor %}
+  </ol>
+</nav>
