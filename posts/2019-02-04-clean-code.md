@@ -1,14 +1,9 @@
-import LayoutMain from '../layout-main.jsx';
-import PostHeader from './header';
-export const meta = {
-  date: '2019-02-04T16:00:00Z',
-  title: 'Clean Code ✨',
-  author: 'Douglas Bouttell'
-};
-export const layout = (props) => <LayoutMain title={meta.title} {...props} />;
-
-<PostHeader {...meta} />
-
+---
+title: Clean Code ✨
+date: 2019-02-04T16:00:00Z
+layout: layouts/post.njk
+tags: post
+---
 Hello Internet.
 
 After reading a rather

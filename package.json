@@ -3,9 +3,21 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "charge serve source",
-    "build": "charge build source dist",
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
     "prettier": "prettier --config .prettierrc.json --write source/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/douglasbouttell/douglasbouttell.co.uk"
+  },
+  "author": {
+    "name": "Douglas Bouttell",
+    "email": "douglas.bouttell@gmail.com",
+    "url": "https://douglasbouttell.co.uk/"
   },
   "husky": {
     "hooks": {
@@ -13,10 +25,12 @@
     }
   },
   "devDependencies": {
-    "@static/charge": "^1.5.0",
-    "date-fns": "^2.8.1",
-    "husky": "^3.1.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1"
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+    "luxon": "^2.3.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1"
   }
 }
