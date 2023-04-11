@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  background: #ddd;
+
+  height: 100%;
+
+  border-top: 32px solid;
+  border-width: 32px;
+  border-image-source: linear-gradient(
+    91deg,
+    red 0%,
+    red 14%,
+    orange 14%,
+    orange 28%,
+    yellow 28%,
+    yellow 42%,
+    green 42%,
+    green 56%,
+    blue 56%,
+    blue 70%,
+    indigo 70%,
+    indigo 84%,
+    violet 84%,
+    violet 100%
+  );
+  border-image-slice: 100% 0 0 0;
+}
+
+.container p {
+  text-align: center;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
