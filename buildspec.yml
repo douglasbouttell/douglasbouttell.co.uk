@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12
+      nodejs: 16
   build:
     commands:
       - npm install
       - npm run build
 artifacts:
-  base-directory: '_site'
+  base-directory: 'out'
   files:
     - '**/*'
