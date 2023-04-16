@@ -20,7 +20,7 @@ export default function HomePage() {
           align-items: center;
 
           background: #7f00ff;
-          background: linear-gradient(to top, #e100ff, #7f00ff);
+          background: linear-gradient(to top, #33003a, #7f00ff);
 
           height: 100%;
         }
